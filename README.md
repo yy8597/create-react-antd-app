@@ -54,7 +54,8 @@ add `config-overrides.js` in project root
   };
 ```
 
-set `.evn` or add alies in `config-overrides.js`
+set `.evn` 
 ```
   NODE_PATH=src/
 ```
+or config alies in `config-overrides.js`

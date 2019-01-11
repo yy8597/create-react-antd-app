@@ -1,17 +1,17 @@
 # create-react-app
 
-##Install
+## Install
 
 run
-`
+```
   npx create-react-app my-app --scripts-version custom-react-scrpits
   cd my-app
   # yarn add react@next react-dom@next #if need hooks
   yarn add antd
-`
+```
 
 add `config-overrides.js` in project root
-`
+```
   module.exports = {
       webpack: function(config, env) {
           // ...add your webpack config
@@ -39,9 +39,9 @@ add `config-overrides.js` in project root
     babelrc.plugins = [pluginName].concat(babelrc.plugins || []);
     return config;
   };
-`
+```
 
 set `.evn` or add alies in `config-overrides.js`
-`
+```
   NODE_PATH=src/
-`
+```

@@ -1,4 +1,4 @@
-# create-react-app
+# create-react-antd-app
 
 ## Install
 
@@ -56,3 +56,5 @@ set `.evn`
   NODE_PATH=src/
 ```
 or config alies in `config-overrides.js`
+
+

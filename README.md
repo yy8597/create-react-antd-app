@@ -7,7 +7,20 @@ run
   npx create-react-app my-app --scripts-version custom-react-scrpits
   cd my-app
   # yarn add react@next react-dom@next #if need hooks
-  yarn add antd
+  yarn add antd react-app-rewired
+```
+
+```diff
+  /* package.json */
+
+  "scripts": {
+-   "start": "react-scripts start",
++   "start": "react-app-rewired start",
+-   "build": "react-scripts build",
++   "build": "react-app-rewired build",
+-   "test": "react-scripts test --env=jsdom",
++   "test": "react-app-rewired test --env=jsdom"
+}
 ```
 
 add `config-overrides.js` in project root

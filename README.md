@@ -20,7 +20,7 @@ run
 +   "build": "react-app-rewired build",
 -   "test": "react-scripts test --env=jsdom",
 +   "test": "react-app-rewired test --env=jsdom"
-}
+  }
 ```
 
 add `config-overrides.js` in project root
@@ -32,9 +32,6 @@ add `config-overrides.js` in project root
               config, 
               ['import', { libraryName: 'antd', libraryDirectory: 'es', style: 'css' }]);
       },
-  }
-  const find = function(l, fn) {
-      return Array.prototype.find.call(l, fn)
   }
 
   const babelLoader = function(conf) {
